@@ -14,8 +14,8 @@ Hi I`m Michael Hiszpanski and I`m working as a Forntend Developer - React & Flut
 ---
 
 - 📫 How to reach me: ...
-<p align="center">
-  <a href="https://skillicons.dev">
+<p align="start">
+  <a href="[https://skillicons.dev](https://www.linkedin.com/in/michael-hiszpanski-016549200/)">
     <img src="https://skillicons.dev/icons?i=linkedin" />
   </a>
 </p>
