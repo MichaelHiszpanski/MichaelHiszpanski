@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+---
+# Hi I`m Michael Hiszpanski and I`m working as a Forntend Developer - React & Flutter
+---
+
 <!--
 **MichaelHiszpanski/MichaelHiszpanski** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
