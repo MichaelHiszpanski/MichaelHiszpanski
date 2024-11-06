@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 ---
-# Hi I`m Michael Hiszpanski and I`m working as a Forntend Developer - React & Flutter
+ Hi I`m Michael Hiszpanski and I`m working as a Forntend Developer - React & Flutter
 ---
 
 <!--
