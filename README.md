@@ -5,7 +5,7 @@
 Hi I`m Michael Hiszpanski and I`m working as a Forntend Developer - React & Flutter
 
 ---
-
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
 <!--
 **MichaelHiszpanski/MichaelHiszpanski** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
