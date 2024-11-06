@@ -13,7 +13,12 @@ Hi I`m Michael Hiszpanski and I`m working as a Forntend Developer - React & Flut
 
 ---
 
-
+- 📫 How to reach me: ...
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=linkedin" />
+  </a>
+</p>
 <!--
 **MichaelHiszpanski/MichaelHiszpanski** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
