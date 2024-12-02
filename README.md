@@ -20,6 +20,12 @@ Hi I`m Michael Hiszpanski and I`m working as a Forntend Developer - React & Flut
   </a>
 </p>
 
+
+---
+
+ Old GitHub profile:⚡  [MichaelXerxes](https://github.com/MichaelXerxes) ⚡ 
+ 
+---
 <!--
 **MichaelHiszpanski/MichaelHiszpanski** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
