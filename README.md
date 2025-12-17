@@ -27,6 +27,8 @@ Hi I`m Michael Hiszpanski and I`m working as a Fullstack Developer - React & Flu
 
  
 ---
+![Satellite Network](https://raw.githubusercontent.com/MichaelHiszpanski/MichaelHiszpanski/main/satellite-multi-orbit.svg)
+
 <!--
 **MichaelHiszpanski/MichaelHiszpanski** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
