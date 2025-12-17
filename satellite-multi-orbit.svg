@@ -1,0 +1,244 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes orbit-fast {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      @keyframes orbit-medium {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      @keyframes orbit-slow {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      @keyframes satellite-spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      @keyframes star-twinkle {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+      
+      @keyframes pulse-glow {
+        0%, 100% { filter: drop-shadow(0 0 3px #00FF88); }
+        50% { filter: drop-shadow(0 0 10px #00FF88); }
+      }
+      
+      @keyframes signal-wave {
+        0% { r: 25; opacity: 1; }
+        100% { r: 60; opacity: 0; }
+      }
+      
+      .orbit-1 {
+        animation: orbit-fast 18s linear infinite;
+        transform-origin: 600px 150px;
+      }
+      
+      .orbit-2 {
+        animation: orbit-medium 28s linear infinite;
+        transform-origin: 600px 150px;
+      }
+      
+      .orbit-3 {
+        animation: orbit-slow 38s linear infinite;
+        transform-origin: 600px 150px;
+      }
+      
+      .satellite {
+        animation: satellite-spin 4s linear infinite;
+      }
+      
+      .stars {
+        animation: star-twinkle 2.5s ease-in-out infinite;
+      }
+      
+      .glow {
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+      
+      .signal {
+        animation: signal-wave 2s ease-out infinite;
+      }
+    </style>
+  </defs>
+  
+  <!-- Background - Deep Space -->
+  <defs>
+    <radialGradient id="space-bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#2a1a4e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a1f;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#space-bg)"/>
+  
+  <!-- Distant Stars -->
+  <circle cx="80" cy="40" r="1.5" fill="#FFFFFF" class="stars" style="animation-delay: 0s"/>
+  <circle cx="180" cy="60" r="1" fill="#FFFFFF" class="stars" style="animation-delay: 0.4s"/>
+  <circle cx="280" cy="35" r="1.2" fill="#FFFFFF" class="stars" style="animation-delay: 0.8s"/>
+  <circle cx="380" cy="50" r="0.8" fill="#FFFFFF" class="stars" style="animation-delay: 1.2s"/>
+  <circle cx="480" cy="30" r="1.5" fill="#FFFFFF" class="stars" style="animation-delay: 1.6s"/>
+  <circle cx="700" cy="45" r="1" fill="#FFFFFF" class="stars" style="animation-delay: 2s"/>
+  <circle cx="820" cy="55" r="1.3" fill="#FFFFFF" class="stars" style="animation-delay: 2.4s"/>
+  <circle cx="920" cy="35" r="0.9" fill="#FFFFFF" class="stars" style="animation-delay: 2.8s"/>
+  <circle cx="1020" cy="50" r="1.5" fill="#FFFFFF" class="stars" style="animation-delay: 3.2s"/>
+  <circle cx="1120" cy="40" r="1.2" fill="#FFFFFF" class="stars" style="animation-delay: 3.6s"/>
+  
+  <circle cx="120" cy="260" r="1" fill="#FFFFFF" class="stars" style="animation-delay: 0.2s"/>
+  <circle cx="320" cy="280" r="1.3" fill="#FFFFFF" class="stars" style="animation-delay: 0.6s"/>
+  <circle cx="520" cy="270" r="1" fill="#FFFFFF" class="stars" style="animation-delay: 1s"/>
+  <circle cx="720" cy="275" r="1.5" fill="#FFFFFF" class="stars" style="animation-delay: 1.4s"/>
+  <circle cx="920" cy="265" r="1.2" fill="#FFFFFF" class="stars" style="animation-delay: 1.8s"/>
+  <circle cx="1020" cy="285" r="1" fill="#FFFFFF" class="stars" style="animation-delay: 2.2s"/>
+  
+  <!-- EARTH - Center -->
+  <g class="glow">
+    <!-- Atmosphere glow -->
+    <circle cx="600" cy="150" r="62" fill="none" stroke="#00FF88" stroke-width="3" opacity="0.3"/>
+    
+    <!-- Main planet -->
+    <circle cx="600" cy="150" r="58" fill="#1E90FF" stroke="#00AAFF" stroke-width="2"/>
+    
+    <!-- Continents -->
+    <ellipse cx="575" cy="130" rx="20" ry="15" fill="#228B22" opacity="0.85"/>
+    <ellipse cx="625" cy="135" rx="18" ry="12" fill="#3CB371" opacity="0.8"/>
+    <ellipse cx="600" cy="160" rx="15" ry="10" fill="#228B22" opacity="0.8"/>
+    <ellipse cx="585" cy="155" rx="12" ry="8" fill="#3CB371" opacity="0.75"/>
+    
+    <!-- Clouds/Weather systems -->
+    <path d="M 570 145 Q 580 140 590 145" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 610 155 Q 625 150 635 158" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.5"/>
+    
+    <!-- Highlights -->
+    <ellipse cx="575" cy="120" rx="18" ry="14" fill="#87CEEB" opacity="0.4"/>
+  </g>
+  
+  <!-- Orbital Paths (dashed circles) -->
+  <circle cx="600" cy="150" r="100" fill="none" stroke="#00FF88" stroke-width="1" stroke-dasharray="4,4" opacity="0.3"/>
+  <circle cx="600" cy="150" r="150" fill="none" stroke="#00FF88" stroke-width="1" stroke-dasharray="4,4" opacity="0.25"/>
+  <circle cx="600" cy="150" r="200" fill="none" stroke="#00FF88" stroke-width="1" stroke-dasharray="4,4" opacity="0.2"/>
+  
+  <!-- ========== ORBIT 1 - LEO (Low Earth Orbit) ========== -->
+  <g class="orbit-1">
+    <!-- Orbital line -->
+    <line x1="600" y1="150" x2="700" y2="150" stroke="#FF6B6B" stroke-width="1" opacity="0.5"/>
+    
+    <!-- SATELLITE 1 - Red (Communications) -->
+    <g class="satellite" transform="translate(700, 150)">
+      <!-- Solar panels -->
+      <rect x="-25" y="-10" width="18" height="20" fill="#FF4444" stroke="#FFD700" stroke-width="1"/>
+      <line x1="-22" y1="-10" x2="-22" y2="10"/>
+      <line x1="-16" y1="-10" x2="-16" y2="10"/>
+      
+      <rect x="7" y="-10" width="18" height="20" fill="#FF4444" stroke="#FFD700" stroke-width="1"/>
+      <line x1="10" y1="-10" x2="10" y2="10"/>
+      <line x1="16" y1="-10" x2="16" y2="10"/>
+      
+      <!-- Main body -->
+      <rect x="-10" y="-7" width="20" height="14" fill="#FF6B6B" stroke="#FFD700" stroke-width="1.5"/>
+      
+      <!-- Antenna -->
+      <line x1="0" y1="-7" x2="0" y2="-18" stroke="#FFD700" stroke-width="2"/>
+      <circle cx="0" cy="-18" r="2" fill="#FFD700"/>
+      
+      <!-- Sensor -->
+      <circle cx="-3" cy="0" r="2.5" fill="#00FFFF"/>
+      <circle cx="3" cy="0" r="2.5" fill="#00FF00"/>
+      
+      <!-- Indicator lights -->
+      <circle cx="-6" cy="-5" r="1.5" fill="#00FF00"/>
+      <circle cx="6" cy="-5" r="1.5" fill="#FF0000"/>
+    </g>
+    
+    <!-- Signal wave from satellite 1 -->
+    <g transform="translate(700, 150)">
+      <circle cx="0" cy="0" r="25" fill="none" stroke="#FF6B6B" stroke-width="1.5" opacity="0.7" class="signal" style="animation-delay: 0s"/>
+    </g>
+  </g>
+  
+  <!-- ========== ORBIT 2 - MEO (Medium Earth Orbit) ========== -->
+  <g class="orbit-2">
+    <!-- Orbital line -->
+    <line x1="600" y1="150" x2="750" y2="150" stroke="#00FFFF" stroke-width="1" opacity="0.4"/>
+    
+    <!-- SATELLITE 2 - Cyan (GPS/Navigation) -->
+    <g class="satellite" transform="translate(750, 150)">
+      <!-- Solar panels (smaller) -->
+      <rect x="-20" y="-8" width="14" height="16" fill="#0099FF" stroke="#00FFFF" stroke-width="1"/>
+      <line x1="-18" y1="-8" x2="-18" y2="8"/>
+      <line x1="-13" y1="-8" x2="-13" y2="8"/>
+      
+      <rect x="6" y="-8" width="14" height="16" fill="#0099FF" stroke="#00FFFF" stroke-width="1"/>
+      <line x1="8" y1="-8" x2="8" y2="8"/>
+      <line x1="13" y1="-8" x2="13" y2="8"/>
+      
+      <!-- Main body -->
+      <rect x="-8" y="-6" width="16" height="12" fill="#00CCFF" stroke="#00FFFF" stroke-width="1.5"/>
+      
+      <!-- Antenna -->
+      <line x1="0" y1="-6" x2="0" y2="-15" stroke="#00FFFF" stroke-width="1.5"/>
+      <circle cx="0" cy="-15" r="1.5" fill="#FFD700"/>
+      
+      <!-- Sensor -->
+      <circle cx="0" cy="0" r="2" fill="#00FF00" stroke="#00FFFF" stroke-width="1"/>
+      
+      <!-- Status -->
+      <circle cx="-4" cy="-3" r="1" fill="#00FF00"/>
+    </g>
+    
+    <!-- Signal from satellite 2 -->
+    <g transform="translate(750, 150)">
+      <circle cx="0" cy="0" r="25" fill="none" stroke="#00CCFF" stroke-width="1" opacity="0.6" class="signal" style="animation-delay: 0.5s"/>
+    </g>
+  </g>
+  
+  <!-- ========== ORBIT 3 - GEO (Geostationary Orbit) ========== -->
+  <g class="orbit-3">
+    <!-- Orbital line -->
+    <line x1="600" y1="150" x2="800" y2="150" stroke="#FFB700" stroke-width="1" opacity="0.3"/>
+    
+    <!-- SATELLITE 3 - Gold (Weather/Comsat) -->
+    <g class="satellite" transform="translate(800, 150)">
+      <!-- Large solar array -->
+      <rect x="-22" y="-7" width="16" height="14" fill="#FFD700" stroke="#FFA500" stroke-width="1" opacity="0.9"/>
+      <line x1="-20" y1="-7" x2="-20" y2="7"/>
+      <line x1="-14" y1="-7" x2="-14" y2="7"/>
+      <line x1="-8" y1="-7" x2="-8" y2="7"/>
+      
+      <rect x="6" y="-7" width="16" height="14" fill="#FFD700" stroke="#FFA500" stroke-width="1" opacity="0.9"/>
+      <line x1="8" y1="-7" x2="8" y2="7"/>
+      <line x1="14" y1="-7" x2="14" y2="7"/>
+      <line x1="20" y1="-7" x2="20" y2="7"/>
+      
+      <!-- Main body -->
+      <rect x="-8" y="-5" width="16" height="10" fill="#FFA500" stroke="#FFD700" stroke-width="1.5"/>
+      
+      <!-- Parabolic dish antenna -->
+      <circle cx="0" cy="-5" r="6" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+      <path d="M -4 -5 Q 0 -2 4 -5" stroke="#FFD700" stroke-width="1" fill="none"/>
+      
+      <!-- Sensor -->
+      <circle cx="0" cy="2" r="2" fill="#FF0000"/>
+    </g>
+    
+    <!-- Signal from satellite 3 -->
+    <g transform="translate(800, 150)">
+      <circle cx="0" cy="0" r="25" fill="none" stroke="#FFA500" stroke-width="1" opacity="0.5" class="signal" style="animation-delay: 1s"/>
+    </g>
+  </g>
+  
+  <!-- STATUS INFORMATION -->
+  <text x="50" y="285" font-family="'Courier New', monospace" font-size="13" font-weight="bold" fill="#00FF88">
+    LEO: ACTIVE ◆ | MEO: ACTIVE ◆ | GEO: ACTIVE ◆
+  </text>
+  
+  <text x="450" y="25" font-family="'Courier New', monospace" font-size="14" font-weight="bold" fill="#00FFFF" text-anchor="middle">
+    MULTI-ORBIT SATELLITE NETWORK
+  </text>
+</svg>
